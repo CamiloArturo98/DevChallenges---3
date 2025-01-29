@@ -14,13 +14,13 @@ searchBtn.addEventListener("click", () => {
     })
 
     .then((data) => {
+      
       data.Title;
       data.Year;
       data.Poster;
 
       let img = document.createElement("img");
-      let dataa =
-        (movieResult.innerText = `${data.Title} ${data.Year}`);
+      let dataa = (movieResult.innerHTML = `<h3>${data.Title} ${data.Year}</h3>`);
       img.src = `${data.Poster}`;
       movieResult.appendChild(img, dataa);
     })
@@ -29,3 +29,4 @@ searchBtn.addEventListener("click", () => {
       alert("Se ha producido un error :" + err.message);
     });
 });
+

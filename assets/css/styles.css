@@ -25,6 +25,14 @@ body{
     border-radius: 8px;
     outline: none;
     transition: 0.3s ease;
+    appearance: none;
+}
+
+.container input:focus,
+.container input:active {
+    background-color: transparent;
+    outline: none;
+    
 }
 #search-btn{
     padding: 5px 15px;
@@ -48,5 +56,10 @@ body{
 }
 #movies-results img{
     border-radius: 20px;
+}
+
+#movies-results h3 {
+    color: white;
+    
 }
 
